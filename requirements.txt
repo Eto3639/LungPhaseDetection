@@ -1,0 +1,11 @@
+torch
+torchvision
+torchxrayvision
+pydicom
+numpy
+opencv-python
+scipy
+scikit-learn
+matplotlib
+fpdf2
+Pillow
