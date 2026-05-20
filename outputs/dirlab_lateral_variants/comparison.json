@@ -1,0 +1,352 @@
+[
+  {
+    "case_id": "DIR-Lab-case1",
+    "strategy": "shroud_default",
+    "lat_freq_hz": 0.0,
+    "ncc": 0.0,
+    "ap_cycle_frames": [
+      27,
+      56
+    ],
+    "lateral_cycle_frames": [
+      27,
+      56
+    ]
+  },
+  {
+    "case_id": "DIR-Lab-case1",
+    "strategy": "shroud_narrow",
+    "lat_freq_hz": 0.49586776859504134,
+    "ncc": 0.9644388300057722,
+    "ap_cycle_frames": [
+      56,
+      83
+    ],
+    "lateral_cycle_frames": [
+      75,
+      109
+    ]
+  },
+  {
+    "case_id": "DIR-Lab-case1",
+    "strategy": "shroud_lower",
+    "lat_freq_hz": 0.49586776859504134,
+    "ncc": 0.9644388300057722,
+    "ap_cycle_frames": [
+      56,
+      83
+    ],
+    "lateral_cycle_frames": [
+      75,
+      109
+    ]
+  },
+  {
+    "case_id": "DIR-Lab-case1",
+    "strategy": "intensity_roi",
+    "lat_freq_hz": 0.49586776859504134,
+    "ncc": 0.9474928135213796,
+    "ap_cycle_frames": [
+      56,
+      83
+    ],
+    "lateral_cycle_frames": [
+      31,
+      61
+    ]
+  },
+  {
+    "case_id": "DIR-Lab-case1",
+    "strategy": "frame_diff",
+    "lat_freq_hz": 0.12396694214876033,
+    "ncc": -0.2855382737224814,
+    "ap_cycle_frames": [
+      56,
+      83
+    ],
+    "lateral_cycle_frames": [
+      64,
+      99
+    ]
+  },
+  {
+    "case_id": "DIR-Lab-case2",
+    "strategy": "shroud_default",
+    "lat_freq_hz": 0.49586776859504134,
+    "ncc": 0.9885514590905488,
+    "ap_cycle_frames": [
+      47,
+      75
+    ],
+    "lateral_cycle_frames": [
+      74,
+      107
+    ]
+  },
+  {
+    "case_id": "DIR-Lab-case2",
+    "strategy": "shroud_narrow",
+    "lat_freq_hz": 0.49586776859504134,
+    "ncc": 0.9885514590905488,
+    "ap_cycle_frames": [
+      47,
+      75
+    ],
+    "lateral_cycle_frames": [
+      74,
+      107
+    ]
+  },
+  {
+    "case_id": "DIR-Lab-case2",
+    "strategy": "shroud_lower",
+    "lat_freq_hz": 0.49586776859504134,
+    "ncc": 0.9885514590905488,
+    "ap_cycle_frames": [
+      47,
+      75
+    ],
+    "lateral_cycle_frames": [
+      74,
+      107
+    ]
+  },
+  {
+    "case_id": "DIR-Lab-case2",
+    "strategy": "intensity_roi",
+    "lat_freq_hz": 0.12396694214876033,
+    "ncc": 0.9330341665285069,
+    "ap_cycle_frames": [
+      21,
+      47
+    ],
+    "lateral_cycle_frames": [
+      31,
+      60
+    ]
+  },
+  {
+    "case_id": "DIR-Lab-case2",
+    "strategy": "frame_diff",
+    "lat_freq_hz": 0.12396694214876033,
+    "ncc": 0.5589502412534842,
+    "ap_cycle_frames": [
+      47,
+      75
+    ],
+    "lateral_cycle_frames": [
+      75,
+      102
+    ]
+  },
+  {
+    "case_id": "DIR-Lab-case3",
+    "strategy": "shroud_default",
+    "lat_freq_hz": 0.49586776859504134,
+    "ncc": 0.9991521962377043,
+    "ap_cycle_frames": [
+      46,
+      76
+    ],
+    "lateral_cycle_frames": [
+      12,
+      43
+    ]
+  },
+  {
+    "case_id": "DIR-Lab-case3",
+    "strategy": "shroud_narrow",
+    "lat_freq_hz": 0.49586776859504134,
+    "ncc": 0.9991521962377043,
+    "ap_cycle_frames": [
+      46,
+      76
+    ],
+    "lateral_cycle_frames": [
+      12,
+      43
+    ]
+  },
+  {
+    "case_id": "DIR-Lab-case3",
+    "strategy": "shroud_lower",
+    "lat_freq_hz": 0.49586776859504134,
+    "ncc": 0.9991521962377043,
+    "ap_cycle_frames": [
+      46,
+      76
+    ],
+    "lateral_cycle_frames": [
+      12,
+      43
+    ]
+  },
+  {
+    "case_id": "DIR-Lab-case3",
+    "strategy": "intensity_roi",
+    "lat_freq_hz": 0.49586776859504134,
+    "ncc": 0.9306455851324111,
+    "ap_cycle_frames": [
+      46,
+      76
+    ],
+    "lateral_cycle_frames": [
+      48,
+      78
+    ]
+  },
+  {
+    "case_id": "DIR-Lab-case3",
+    "strategy": "frame_diff",
+    "lat_freq_hz": 0.49586776859504134,
+    "ncc": 0.9997268641135253,
+    "ap_cycle_frames": [
+      16,
+      46
+    ],
+    "lateral_cycle_frames": [
+      17,
+      47
+    ]
+  },
+  {
+    "case_id": "DIR-Lab-case4",
+    "strategy": "shroud_default",
+    "lat_freq_hz": 0.49586776859504134,
+    "ncc": 0.9983075657233109,
+    "ap_cycle_frames": [
+      51,
+      82
+    ],
+    "lateral_cycle_frames": [
+      26,
+      56
+    ]
+  },
+  {
+    "case_id": "DIR-Lab-case4",
+    "strategy": "shroud_narrow",
+    "lat_freq_hz": 0.12396694214876033,
+    "ncc": 0.9960193455356137,
+    "ap_cycle_frames": [
+      82,
+      113
+    ],
+    "lateral_cycle_frames": [
+      78,
+      111
+    ]
+  },
+  {
+    "case_id": "DIR-Lab-case4",
+    "strategy": "shroud_lower",
+    "lat_freq_hz": 0.12396694214876033,
+    "ncc": 0.9960193455356137,
+    "ap_cycle_frames": [
+      82,
+      113
+    ],
+    "lateral_cycle_frames": [
+      78,
+      111
+    ]
+  },
+  {
+    "case_id": "DIR-Lab-case4",
+    "strategy": "intensity_roi",
+    "lat_freq_hz": 0.12396694214876033,
+    "ncc": 0.9894982423107286,
+    "ap_cycle_frames": [
+      82,
+      113
+    ],
+    "lateral_cycle_frames": [
+      30,
+      59
+    ]
+  },
+  {
+    "case_id": "DIR-Lab-case4",
+    "strategy": "frame_diff",
+    "lat_freq_hz": 0.6198347107438017,
+    "ncc": 0.999109330064554,
+    "ap_cycle_frames": [
+      82,
+      113
+    ],
+    "lateral_cycle_frames": [
+      55,
+      79
+    ]
+  },
+  {
+    "case_id": "DIR-Lab-case5",
+    "strategy": "shroud_default",
+    "lat_freq_hz": 0.49586776859504134,
+    "ncc": 0.9980480417048585,
+    "ap_cycle_frames": [
+      36,
+      66
+    ],
+    "lateral_cycle_frames": [
+      21,
+      51
+    ]
+  },
+  {
+    "case_id": "DIR-Lab-case5",
+    "strategy": "shroud_narrow",
+    "lat_freq_hz": 0.49586776859504134,
+    "ncc": 0.9996587944101705,
+    "ap_cycle_frames": [
+      66,
+      98
+    ],
+    "lateral_cycle_frames": [
+      19,
+      48
+    ]
+  },
+  {
+    "case_id": "DIR-Lab-case5",
+    "strategy": "shroud_lower",
+    "lat_freq_hz": 0.49586776859504134,
+    "ncc": 0.9916995167805683,
+    "ap_cycle_frames": [
+      66,
+      98
+    ],
+    "lateral_cycle_frames": [
+      20,
+      49
+    ]
+  },
+  {
+    "case_id": "DIR-Lab-case5",
+    "strategy": "intensity_roi",
+    "lat_freq_hz": 0.49586776859504134,
+    "ncc": 0.9960635978019007,
+    "ap_cycle_frames": [
+      8,
+      36
+    ],
+    "lateral_cycle_frames": [
+      61,
+      91
+    ]
+  },
+  {
+    "case_id": "DIR-Lab-case5",
+    "strategy": "frame_diff",
+    "lat_freq_hz": 0.371900826446281,
+    "ncc": 0.9951240980924266,
+    "ap_cycle_frames": [
+      66,
+      98
+    ],
+    "lateral_cycle_frames": [
+      75,
+      106
+    ]
+  }
+]

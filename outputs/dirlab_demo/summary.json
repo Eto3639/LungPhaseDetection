@@ -1,0 +1,292 @@
+[
+  {
+    "case_id": "DIR-Lab-case10",
+    "source": "outputs/dirlab_data/Case10Pack",
+    "fps": 15.0,
+    "n_cycles": 4,
+    "frames_per_cycle": 30,
+    "n_phases": 10,
+    "ct_shape": [
+      120,
+      512,
+      512
+    ],
+    "spacing_xyz_mm": [
+      0.97,
+      0.97,
+      2.5
+    ],
+    "ap_dominant_frequency_hz": 0.49586776859504134,
+    "lateral_dominant_frequency_hz": 0.49586776859504134,
+    "best_pair_ncc": 0.998867137363018,
+    "ap_cycle_frames": [
+      11,
+      42
+    ],
+    "lateral_cycle_frames": [
+      72,
+      104
+    ]
+  },
+  {
+    "case_id": "DIR-Lab-case1",
+    "source": "outputs/dirlab_data/Case1Pack",
+    "fps": 15.0,
+    "n_cycles": 4,
+    "frames_per_cycle": 30,
+    "n_phases": 10,
+    "ct_shape": [
+      94,
+      256,
+      256
+    ],
+    "spacing_xyz_mm": [
+      0.97,
+      0.97,
+      2.5
+    ],
+    "ap_dominant_frequency_hz": 0.12396694214876033,
+    "lateral_dominant_frequency_hz": 0.49586776859504134,
+    "best_pair_ncc": 0.9631315686808644,
+    "ap_cycle_frames": [
+      56,
+      83
+    ],
+    "lateral_cycle_frames": [
+      75,
+      109
+    ]
+  },
+  {
+    "case_id": "DIR-Lab-case2",
+    "source": "outputs/dirlab_data/Case2Pack",
+    "fps": 15.0,
+    "n_cycles": 4,
+    "frames_per_cycle": 30,
+    "n_phases": 10,
+    "ct_shape": [
+      112,
+      256,
+      256
+    ],
+    "spacing_xyz_mm": [
+      1.16,
+      1.16,
+      2.5
+    ],
+    "ap_dominant_frequency_hz": 0.12396694214876033,
+    "lateral_dominant_frequency_hz": 0.49586776859504134,
+    "best_pair_ncc": 0.9885959497682393,
+    "ap_cycle_frames": [
+      47,
+      75
+    ],
+    "lateral_cycle_frames": [
+      74,
+      107
+    ]
+  },
+  {
+    "case_id": "DIR-Lab-case3",
+    "source": "outputs/dirlab_data/Case3Pack",
+    "fps": 15.0,
+    "n_cycles": 4,
+    "frames_per_cycle": 30,
+    "n_phases": 10,
+    "ct_shape": [
+      104,
+      256,
+      256
+    ],
+    "spacing_xyz_mm": [
+      1.15,
+      1.15,
+      2.5
+    ],
+    "ap_dominant_frequency_hz": 0.12396694214876033,
+    "lateral_dominant_frequency_hz": 0.49586776859504134,
+    "best_pair_ncc": 0.9991512754107473,
+    "ap_cycle_frames": [
+      46,
+      76
+    ],
+    "lateral_cycle_frames": [
+      12,
+      43
+    ]
+  },
+  {
+    "case_id": "DIR-Lab-case4",
+    "source": "outputs/dirlab_data/Case4Pack",
+    "fps": 15.0,
+    "n_cycles": 4,
+    "frames_per_cycle": 30,
+    "n_phases": 10,
+    "ct_shape": [
+      99,
+      256,
+      256
+    ],
+    "spacing_xyz_mm": [
+      1.13,
+      1.13,
+      2.5
+    ],
+    "ap_dominant_frequency_hz": 0.12396694214876033,
+    "lateral_dominant_frequency_hz": 0.12396694214876033,
+    "best_pair_ncc": 0.9954764640488586,
+    "ap_cycle_frames": [
+      43,
+      76
+    ],
+    "lateral_cycle_frames": [
+      16,
+      47
+    ]
+  },
+  {
+    "case_id": "DIR-Lab-case5",
+    "source": "outputs/dirlab_data/Case5Pack",
+    "fps": 15.0,
+    "n_cycles": 4,
+    "frames_per_cycle": 30,
+    "n_phases": 10,
+    "ct_shape": [
+      106,
+      256,
+      256
+    ],
+    "spacing_xyz_mm": [
+      1.1,
+      1.1,
+      2.5
+    ],
+    "ap_dominant_frequency_hz": 0.49586776859504134,
+    "lateral_dominant_frequency_hz": 0.49586776859504134,
+    "best_pair_ncc": 0.9996837290348815,
+    "ap_cycle_frames": [
+      46,
+      76
+    ],
+    "lateral_cycle_frames": [
+      48,
+      78
+    ]
+  },
+  {
+    "case_id": "DIR-Lab-case6",
+    "source": "outputs/dirlab_data/Case6Pack",
+    "fps": 15.0,
+    "n_cycles": 4,
+    "frames_per_cycle": 30,
+    "n_phases": 10,
+    "ct_shape": [
+      128,
+      512,
+      512
+    ],
+    "spacing_xyz_mm": [
+      0.97,
+      0.97,
+      2.5
+    ],
+    "ap_dominant_frequency_hz": 0.12396694214876033,
+    "lateral_dominant_frequency_hz": 0.12396694214876033,
+    "best_pair_ncc": 0.994968848414272,
+    "ap_cycle_frames": [
+      10,
+      42
+    ],
+    "lateral_cycle_frames": [
+      15,
+      46
+    ]
+  },
+  {
+    "case_id": "DIR-Lab-case7",
+    "source": "outputs/dirlab_data/Case7Pack",
+    "fps": 15.0,
+    "n_cycles": 4,
+    "frames_per_cycle": 30,
+    "n_phases": 10,
+    "ct_shape": [
+      136,
+      512,
+      512
+    ],
+    "spacing_xyz_mm": [
+      0.97,
+      0.97,
+      2.5
+    ],
+    "ap_dominant_frequency_hz": 0.49586776859504134,
+    "lateral_dominant_frequency_hz": 0.49586776859504134,
+    "best_pair_ncc": 0.994072659261162,
+    "ap_cycle_frames": [
+      43,
+      74
+    ],
+    "lateral_cycle_frames": [
+      73,
+      103
+    ]
+  },
+  {
+    "case_id": "DIR-Lab-case8",
+    "source": "outputs/dirlab_data/Case8Deploy",
+    "fps": 15.0,
+    "n_cycles": 4,
+    "frames_per_cycle": 30,
+    "n_phases": 10,
+    "ct_shape": [
+      128,
+      512,
+      512
+    ],
+    "spacing_xyz_mm": [
+      0.97,
+      0.97,
+      2.5
+    ],
+    "ap_dominant_frequency_hz": 0.24793388429752067,
+    "lateral_dominant_frequency_hz": 0.12396694214876033,
+    "best_pair_ncc": 0.9727420796847583,
+    "ap_cycle_frames": [
+      53,
+      84
+    ],
+    "lateral_cycle_frames": [
+      60,
+      87
+    ]
+  },
+  {
+    "case_id": "DIR-Lab-case9",
+    "source": "outputs/dirlab_data/Case9Pack",
+    "fps": 15.0,
+    "n_cycles": 4,
+    "frames_per_cycle": 30,
+    "n_phases": 10,
+    "ct_shape": [
+      128,
+      512,
+      512
+    ],
+    "spacing_xyz_mm": [
+      0.97,
+      0.97,
+      2.5
+    ],
+    "ap_dominant_frequency_hz": 0.49586776859504134,
+    "lateral_dominant_frequency_hz": 0.49586776859504134,
+    "best_pair_ncc": 0.9982721199220989,
+    "ap_cycle_frames": [
+      20,
+      51
+    ],
+    "lateral_cycle_frames": [
+      45,
+      76
+    ]
+  }
+]

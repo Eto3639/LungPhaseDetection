@@ -1,0 +1,29 @@
+{
+  "case_id": "DIR-Lab-case3",
+  "source": "outputs/dirlab_data/Case3Pack",
+  "fps": 15.0,
+  "n_cycles": 4,
+  "frames_per_cycle": 30,
+  "n_phases": 10,
+  "ct_shape": [
+    104,
+    256,
+    256
+  ],
+  "spacing_xyz_mm": [
+    1.15,
+    1.15,
+    2.5
+  ],
+  "ap_dominant_frequency_hz": 0.12396694214876033,
+  "lateral_dominant_frequency_hz": 0.49586776859504134,
+  "best_pair_ncc": 0.9991512754107473,
+  "ap_cycle_frames": [
+    46,
+    76
+  ],
+  "lateral_cycle_frames": [
+    12,
+    43
+  ]
+}

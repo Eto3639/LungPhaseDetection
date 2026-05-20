@@ -1,0 +1,140 @@
+name: Deploy reports
+
+on:
+  push:
+    branches: [main, master]
+    paths:
+      - 'outputs/**/index.html'
+      - 'outputs/**/summary.json'
+      - 'outputs/**/report.html'
+      - 'outputs/**/report.pdf'
+      - 'outputs/**/metrics.json'
+      - 'scripts/build_pages.py'
+      - 'scripts/notion_publish.py'
+      - '.github/workflows/deploy-reports.yml'
+  workflow_dispatch:
+    inputs:
+      notify_notion:
+        description: 'Append rows to Notion database'
+        type: boolean
+        default: true
+      notify_slack:
+        description: 'Post Slack notification'
+        type: boolean
+        default: true
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    outputs:
+      pages_url: ${{ steps.pages.outputs.page_url }}
+      manifest_json: ${{ steps.build.outputs.manifest_json }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Build static site
+        id: build
+        run: |
+          python scripts/build_pages.py --site-dir _site
+          if [ -f _site/manifest.json ]; then
+            {
+              echo 'manifest_json<<EOF'
+              cat _site/manifest.json
+              echo
+              echo EOF
+            } >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Configure GitHub Pages
+        id: pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+
+  notify-notion:
+    needs: [build, deploy]
+    if: ${{ github.event_name != 'workflow_dispatch' || inputs.notify_notion }}
+    runs-on: ubuntu-latest
+    env:
+      NOTION_API_KEY: ${{ secrets.NOTION_API_KEY }}
+      NOTION_DATABASE_ID: ${{ secrets.NOTION_DATABASE_ID }}
+    steps:
+      - uses: actions/checkout@v4
+        if: env.NOTION_API_KEY != ''
+      - uses: actions/setup-python@v5
+        if: env.NOTION_API_KEY != ''
+        with:
+          python-version: '3.11'
+      - name: Publish run summaries to Notion
+        if: env.NOTION_API_KEY != ''
+        env:
+          PAGES_URL: ${{ needs.deploy.outputs.page_url || needs.build.outputs.pages_url }}
+        run: |
+          for summary in $(find outputs -maxdepth 2 -name summary.json | sort); do
+            run_dir=$(dirname "$summary")
+            run_name=$(basename "$run_dir")
+            case "$run_name" in
+              dirlab_demo*) source_tag="DIR-Lab" ;;
+              tcia_4d_lung*) source_tag="TCIA" ;;
+              *) source_tag="other" ;;
+            esac
+            python scripts/notion_publish.py \
+              --summary "$summary" \
+              --source "$source_tag" \
+              --run-id "${run_name}_${GITHUB_SHA::7}" \
+              --pages-base-url "${PAGES_URL}runs/${run_name}_$(stat -c %Y "$run_dir")"
+          done
+      - name: Skip notice
+        if: env.NOTION_API_KEY == ''
+        run: echo "NOTION_API_KEY not set; skipping Notion publish."
+
+  notify-slack:
+    needs: [build, deploy]
+    if: ${{ github.event_name != 'workflow_dispatch' || inputs.notify_slack }}
+    runs-on: ubuntu-latest
+    env:
+      SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+    steps:
+      - name: Post Slack message
+        if: env.SLACK_WEBHOOK_URL != ''
+        env:
+          PAGES_URL: ${{ needs.deploy.outputs.page_url || needs.build.outputs.pages_url }}
+          MANIFEST: ${{ needs.build.outputs.manifest_json }}
+        run: |
+          summary_text="DVF QA reports updated"
+          if [ -n "$MANIFEST" ]; then
+            runs=$(echo "$MANIFEST" | python -c "import sys, json; m=json.load(sys.stdin); print(', '.join(f\"{e['source']} (cases={e['headline']['cases']}, meanNCC={e['headline']['mean_ncc']:.3f})\" for e in m))")
+            summary_text="$summary_text — $runs"
+          fi
+          payload=$(jq -nc --arg t "$summary_text" --arg u "$PAGES_URL" '{text: ($t + "\n" + $u)}')
+          curl -sS -X POST -H 'Content-type: application/json' -d "$payload" "$SLACK_WEBHOOK_URL"
+      - name: Skip notice
+        if: env.SLACK_WEBHOOK_URL == ''
+        run: echo "SLACK_WEBHOOK_URL not set; skipping Slack notification."

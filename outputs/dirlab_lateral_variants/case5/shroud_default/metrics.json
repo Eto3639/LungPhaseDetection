@@ -1,0 +1,14 @@
+{
+  "case_id": "DIR-Lab-case5",
+  "strategy": "shroud_default",
+  "lat_freq_hz": 0.49586776859504134,
+  "ncc": 0.9980480417048585,
+  "ap_cycle_frames": [
+    36,
+    66
+  ],
+  "lateral_cycle_frames": [
+    21,
+    51
+  ]
+}

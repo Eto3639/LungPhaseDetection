@@ -1,0 +1,18 @@
+{
+  "case_id": "TCIA-4D-Lung-100_HM10395-10phases",
+  "fps": 15.0,
+  "n_cycles": 4,
+  "frames_per_cycle": 30,
+  "n_phases": 10,
+  "ap_dominant_frequency_hz": 0.49586776859504134,
+  "lateral_dominant_frequency_hz": 0.12396694214876033,
+  "best_pair_ncc": 0.9990757228705058,
+  "ap_cycle_frames": [
+    61,
+    91
+  ],
+  "lateral_cycle_frames": [
+    59,
+    89
+  ]
+}

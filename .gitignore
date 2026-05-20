@@ -1,0 +1,18 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+venv/
+.DS_Store
+.ipynb_checkpoints/
+
+# Raw datasets — license-restricted or large; do not commit
+outputs/dirlab_data/
+outputs/tcia_4d_lung_data/
+outputs/popi_data/
+
+# Local scratch
+_scratch/
+*.tar
+*.zip
+_site/

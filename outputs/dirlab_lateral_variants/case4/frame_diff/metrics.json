@@ -1,0 +1,14 @@
+{
+  "case_id": "DIR-Lab-case4",
+  "strategy": "frame_diff",
+  "lat_freq_hz": 0.6198347107438017,
+  "ncc": 0.999109330064554,
+  "ap_cycle_frames": [
+    82,
+    113
+  ],
+  "lateral_cycle_frames": [
+    55,
+    79
+  ]
+}

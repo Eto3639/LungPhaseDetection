@@ -1,0 +1,29 @@
+{
+  "case_id": "DIR-Lab-case2",
+  "source": "outputs/dirlab_data/Case2Pack",
+  "fps": 15.0,
+  "n_cycles": 4,
+  "frames_per_cycle": 30,
+  "n_phases": 10,
+  "ct_shape": [
+    112,
+    256,
+    256
+  ],
+  "spacing_xyz_mm": [
+    1.16,
+    1.16,
+    2.5
+  ],
+  "ap_dominant_frequency_hz": 0.12396694214876033,
+  "lateral_dominant_frequency_hz": 0.49586776859504134,
+  "best_pair_ncc": 0.9885959497682393,
+  "ap_cycle_frames": [
+    47,
+    75
+  ],
+  "lateral_cycle_frames": [
+    74,
+    107
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "case_id": "DIR-Lab-case8",
+  "source": "outputs/dirlab_data/Case8Deploy",
+  "fps": 15.0,
+  "n_cycles": 4,
+  "frames_per_cycle": 30,
+  "n_phases": 10,
+  "ct_shape": [
+    128,
+    512,
+    512
+  ],
+  "spacing_xyz_mm": [
+    0.97,
+    0.97,
+    2.5
+  ],
+  "ap_dominant_frequency_hz": 0.24793388429752067,
+  "lateral_dominant_frequency_hz": 0.12396694214876033,
+  "best_pair_ncc": 0.9727420796847583,
+  "ap_cycle_frames": [
+    53,
+    84
+  ],
+  "lateral_cycle_frames": [
+    60,
+    87
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "case_id": "DIR-Lab-case4",
+  "strategy": "intensity_roi",
+  "lat_freq_hz": 0.12396694214876033,
+  "ncc": 0.9894982423107286,
+  "ap_cycle_frames": [
+    82,
+    113
+  ],
+  "lateral_cycle_frames": [
+    30,
+    59
+  ]
+}

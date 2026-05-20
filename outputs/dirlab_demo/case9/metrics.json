@@ -1,0 +1,29 @@
+{
+  "case_id": "DIR-Lab-case9",
+  "source": "outputs/dirlab_data/Case9Pack",
+  "fps": 15.0,
+  "n_cycles": 4,
+  "frames_per_cycle": 30,
+  "n_phases": 10,
+  "ct_shape": [
+    128,
+    512,
+    512
+  ],
+  "spacing_xyz_mm": [
+    0.97,
+    0.97,
+    2.5
+  ],
+  "ap_dominant_frequency_hz": 0.49586776859504134,
+  "lateral_dominant_frequency_hz": 0.49586776859504134,
+  "best_pair_ncc": 0.9982721199220989,
+  "ap_cycle_frames": [
+    20,
+    51
+  ],
+  "lateral_cycle_frames": [
+    45,
+    76
+  ]
+}
