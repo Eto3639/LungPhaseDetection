@@ -31,6 +31,7 @@ RUN_LABELS: dict[str, str] = {
     "tcia_4d_lung_demo": "TCIA 4D-Lung pilot",
     "tcia_4d_lung_demo_full": "TCIA 4D-Lung 10-phase",
     "dvf_predict_qa": "DVF predict QA",
+    "generated_ct_qa": "Generated CT QA",
 }
 
 

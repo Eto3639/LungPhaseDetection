@@ -1,4 +1,19 @@
-# DVF QA
+# lung-4d-pipeline
+
+End-to-end QA toolkit for the 2D→4D lung-imaging pipeline. Three coordinated
+components live in this monorepo:
+
+| Subsystem | Purpose | Top-level entry points |
+|---|---|---|
+| **Phase detection** (upstream input prep) | Pair AP + lateral dynamic X-ray frames into one-cycle clips for the 2D-4D model. Amsterdam Shroud + cycle pairing, classical / AI-free. | `scripts/dirlab_demo.py`, `scripts/tcia_4d_lung_demo.py` |
+| **DVF QA** (intermediate output) | Validate predicted displacement vector fields: Jacobian determinant, folding analysis, warped CT similarity. | `scripts/dvf_predict_qa.py` |
+| **Generated CT QA** (downstream output) | Evaluate AI-generated synthetic CT: geometric integrity, dosimetric accuracy, temporal motion, robustness checks. | `generated_ct_qa/src/main.py` |
+
+The original DVF QA module (`dvf_qa/`) still hosts the shared infrastructure
+that all three subsystems reuse (image I/O, DRR rendering via DiffDRR,
+HTML/PDF report builder, Notion / Slack / Pages automation).
+
+## Legacy section: DVF QA (3D DVF validation)
 
 QA utilities for 3D displacement vector fields estimated from fluoroscopic images and CT.
 

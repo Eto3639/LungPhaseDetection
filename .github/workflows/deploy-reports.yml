@@ -101,10 +101,11 @@ jobs:
             run_dir=$(dirname "$summary")
             run_name=$(basename "$run_dir")
             case "$run_name" in
-              dirlab_demo*)     source_tag="DIR-Lab" ;;
-              tcia_4d_lung*)    source_tag="TCIA" ;;
-              dvf_predict_qa*)  source_tag="DVF-Predict" ;;
-              *)                source_tag="other" ;;
+              dirlab_demo*)        source_tag="DIR-Lab" ;;
+              tcia_4d_lung*)       source_tag="TCIA" ;;
+              dvf_predict_qa*)     source_tag="DVF-Predict" ;;
+              generated_ct_qa*)    source_tag="Generated-CT" ;;
+              *)                   source_tag="other" ;;
             esac
             python scripts/notion_publish.py \
               --summary "$summary" \
