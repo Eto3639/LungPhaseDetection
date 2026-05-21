@@ -97,8 +97,8 @@ def callout(emoji: str, s: str) -> dict:
 
 # ---------- content for 2026-05-20 milestone ----------
 
-PAGES_URL = "https://eto3639.github.io/LungPhaseDetection/"
-REPO_URL = "https://github.com/Eto3639/LungPhaseDetection"
+PAGES_URL = "https://eto3639.github.io/lung-4d-pipeline/"
+REPO_URL = "https://github.com/Eto3639/lung-4d-pipeline"
 
 
 def build_summary_2026_05_20() -> tuple[str, list[dict]]:

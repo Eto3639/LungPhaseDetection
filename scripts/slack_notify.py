@@ -102,7 +102,7 @@ def build_blocks(manifest: list[dict], *, pages_url: str, commit: str | None, br
             {"type": "button", "text": {"type": "plain_text", "text": "🌐 ライブレポートを開く"},
              "url": pages_url, "style": "primary"},
             {"type": "button", "text": {"type": "plain_text", "text": "📦 リポジトリ"},
-             "url": "https://github.com/Eto3639/LungPhaseDetection"},
+             "url": "https://github.com/Eto3639/lung-4d-pipeline"},
         ],
     })
     context_parts: list[str] = []
@@ -149,7 +149,7 @@ def main() -> int:
         print("SLACK_WEBHOOK_URL not set; skipping.", file=sys.stderr)
         return 0
     if not args.pages_url:
-        args.pages_url = "https://eto3639.github.io/LungPhaseDetection/"
+        args.pages_url = "https://eto3639.github.io/lung-4d-pipeline/"
 
     manifest = load_manifest(args.manifest)
     text = summary_text(manifest)
